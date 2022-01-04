@@ -1,0 +1,25 @@
+@font-face{
+    src: url("../font/NanumSquareRoundL.ttf");
+    font-family: "NN";
+}
+
+@media only screen and (max-width: 800px){
+    *{
+        font-family: "NN";
+    }
+    
+    .placeholder_img{
+        height: auto;
+        text-align: center;
+        margin-top: 100%;
+    }
+
+    .placeholder_text h1{
+        width: 100%;
+        position: absolute;
+        text-align: center;
+        font-size: 15px;
+        font-weight: 400;
+        color: #F4BB04;
+    }
+}

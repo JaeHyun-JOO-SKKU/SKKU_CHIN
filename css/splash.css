@@ -1,0 +1,25 @@
+@font-face{
+    src: url("../font/NanumSquareRoundL.ttf");
+    font-family: "NN";
+}
+
+@media only screen and (max-width: 800px){
+    *{
+        font-family: "NN";
+    }
+    
+    .index_logo{
+        text-align: center;
+        margin-top: 60%;
+    }
+
+    .index_loading h1{
+        width: 100%;
+        position: absolute;
+        bottom: 10%;
+        text-align: center;
+        font-size: 20px;
+        font-weight: 400;
+        color: #F4BB04;
+    }
+}
