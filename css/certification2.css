@@ -1,0 +1,64 @@
+/* 링크 파란색 방지 */
+a{
+    color: black;
+}
+
+
+/* 스꾸친 로고 (no_text) */
+.certification2_logo{
+    text-align: center;
+    margin-top: 40%;
+}
+
+/* 제목 */
+.certification2_title{
+    text-align: center;
+}
+
+.certification2_title h1{
+    font-weight: 300;
+    margin-top: 0;
+}
+
+/* 설명 */
+.certification2_text{
+    margin-top: 10%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.certification2_text p{
+    font-size: 17px;
+    font-weight: 400;
+}
+
+
+
+/* 이메일 인증 버튼 */
+.certification2_btn{
+    text-align: center;
+}
+
+.certification2_btn button{
+    font-size: 20px;
+    color: white;
+    width: 90%;
+    height: 50px;
+    border-radius: 0.7rem;
+    border: none;
+    background-color: #FFCF00;
+    margin-top: 10px;
+}
+
+/* 주의사항 */
+.certification2_explain{
+    margin-top: 30px;
+    text-align: center;
+}
+
+.certification2_explain p{
+    font-size: 15px;
+    color: #7c7c7c;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
