@@ -1,86 +1,97 @@
-/* 링크 파란색 방지 */
-a{
-    color: black;
+@font-face{
+    src: url("../font/NanumSquareRoundL.ttf");
+    font-family: "NN";
 }
 
-/* 텍스트 입력창 클릭시 테두리 생기는거 방지 */
-input:focus{
-    outline: none;
-}
+@media only screen and (max-width: 800px){
+    /* 링크 파란색 방지 */
 
+    *{
+        font-family: "NN";
+    }
 
-.login_logo{
-    text-align: center;
-    margin-top: 40%;
-}
+    a{
+        color: black;
+    }
 
-.login_greeting{
-    text-align: center;
-}
+    /* 텍스트 입력창 클릭시 테두리 생기는거 방지 */
+    input:focus{
+        outline: none;
+    }
 
-.login_greeting h1{
-    font-weight: 300;
-    margin-top: 0;
-}
+    .login_logo{
+        text-align: center;
+        margin-top: 40%;
+    }
 
-.login_text{
-    margin-top: 15%;
-    text-align: center;
-    margin-bottom: 10px;
-}
+    .login_greeting{
+        text-align: center;
+    }
 
-.login_text h2{
-    margin: 0;
-    padding-left: 7.5%;
-    width: 85%;
-    text-align: left;
-    font-size: 20px;
-    padding-bottom: 5px;
-}
+    .login_greeting h1{
+        font-weight: 300;
+        margin-top: 0;
+    }
 
-.login_text h2:last-of-type{
-    margin-top: 25px;
-}
+    .login_text{
+        margin-top: 15%;
+        text-align: center;
+        margin-bottom: 10px;
+    }
 
-.login_text input{
-    width: 85%;
-    color: rgb(78, 78, 78);
-    font-size: 20px;
-    border-top: 0;
-    border-left: 0;
-    border-right: 0;
-    border-bottom: 1px black solid;
-}
+    .login_text h2{
+        margin: 0;
+        padding-left: 7.5%;
+        width: 85%;
+        text-align: left;
+        font-size: 20px;
+        padding-bottom: 5px;
+    }
 
-.login_btn{
-    text-align: center;
-    margin-top: 25px;
-}
+    .login_text h2:last-of-type{
+        margin-top: 25px;
+    }
 
-.login_btn button{
-    font-size: 20px;
-    color: white;
-    width: 90%;
-    height: 50px;
-    border-radius: 0.7rem;
-    border: none;
-    background-color: #FFCF00;
-}
+    .login_text input{
+        width: 85%;
+        color: rgb(78, 78, 78);
+        font-size: 20px;
+        border-top: 0;
+        border-left: 0;
+        border-right: 0;
+        border-bottom: 1px black solid;
+    }
 
-.login_register_btn{
-    text-align: center;
-    margin-top: 15px;
-}
+    .login_btn{
+        text-align: center;
+        margin-top: 25px;
+    }
 
-.login_register_btn button{
-    font-size: 17px;
-    color: black;
-    width: 40%;
-    background-color: white;
-    border: none;
-}
+    .login_btn button{
+        font-size: 20px;
+        color: white;
+        width: 90%;
+        height: 50px;
+        border-radius: 0.7rem;
+        border: none;
+        background-color: #FFCF00;
+    }
 
-.login_register_btn button #register{
-    text-align: right;
-    padding-right: 5%;
+    .login_register_btn{
+        text-align: center;
+        margin-top: 15px;
+    }
+
+    .login_register_btn button{
+        font-size: 17px;
+        color: black;
+        width: 40%;
+        background-color: white;
+        border: none;
+    }
+
+    .login_register_btn button #register{
+        text-align: right;
+        padding-right: 5%;
+    }
 }
