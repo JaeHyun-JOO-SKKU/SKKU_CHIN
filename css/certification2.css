@@ -32,6 +32,16 @@ a{
     font-weight: 400;
 }
 
+.certification2_mailInfo{
+    text-align: center;
+}
+
+.certification2_mailInfo p{
+    font-size: 15px;
+    font-weight: 400;
+    color: #7c7c7c;
+}
+
 
 
 /* 이메일 인증 버튼 */

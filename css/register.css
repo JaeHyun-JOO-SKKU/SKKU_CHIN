@@ -12,6 +12,20 @@
     /* 전체 폰트 */
         *{font-family: "NN";}
 
+        .notice .notice_header{
+            display: flex;
+            justify-content: space-between; 
+            margin-bottom: 35px;
+            font-size: 18px;
+        }
+        /* header 왼쪽 부분: 뒤로가기 아이콘, 페이지 제목 */
+        .notice .notice_hleft {
+            display: flex;
+        }
+        .notice .notice_hleft .notice_pagetitle{
+            padding-left: 15px;
+        }
+
     /* 각 소제목 */
         .register_title{
             width: 100%;
@@ -104,7 +118,7 @@
         .register_btn button{
             font-size: 20px;
             color: white;
-            width: 90%;
+            width: 100%;
             height: 50px;
             border-radius: 0.7rem;
             border: none;
