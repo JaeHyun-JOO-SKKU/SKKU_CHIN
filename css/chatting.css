@@ -1,28 +1,27 @@
 @media only screen and (max-width: 800px){
     /* 1. 전체 페이지 공통 요소 */
-        *{
-            margin: 0;
-        }
-
-        .header_chatting{
-            margin: 32px 20px 0 20px;
-        }
-
-        /* 링크 색 지우기 */    
-        a{
-            color: black;
-        }
 
     /* 2. 전체 공통 요소는 아니지만, 다른 페이지에서도 쓰이는 요소 */
 
-        .header_chatting{
-            margin-bottom: 20px;
-        }
-        .header_chatting h2{
-            font-size: 18px;
-        }
+
 
     /* 3. 이 페이지에서만 쓰이는 요소 */
+
+
+.chatting {
+    margin: 32px 20px 20px 20px; 
+    font-size: 15px;
+    display: block;
+    font-weight: 700;
+}
+
+
+.chatting .chatting_header {
+    display: flex;
+    justify-content: space-between; 
+    font-size: 18px;
+    box-sizing : border-box;
+}
         /* 채팅 목록 틀 */
         .chatting_box{
             width: 100%;
@@ -88,9 +87,21 @@
             font-weight: bold;
             color:#8e8e8e;
             text-align: right;
+            margin-top: -12px;
         }
         .chatting_item .chatting_new{
             margin-top: 10px;
-            text-align: right;
+            margin-left: 20px;
+            right: 0;
+            text-align: center;
+            line-height: 20px;
+            width: 20px;
+            height: 20px;
+            background-color: #FFCE00;
+            border-radius: 1rem;
+        }
+        
+        .chatting_count{
+            color: #eee;
         }
     }

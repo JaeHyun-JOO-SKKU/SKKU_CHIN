@@ -6,47 +6,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SKKUCHIN_메일인증</title>
     <link rel="stylesheet" type="text/css" href="./css/certification.css">
+    
 </head>
 <body>
+    <div class="c_header">
+        <div class="certification_header">
+            <div class="upload_hleft">회원가입</div>
+            <img src="image/drawable-xxxhdpi/icon_close.png" style="vertical-align:middle; width: 14px; height: 14px;">
+        </div>
+    </div>
     <div class="certification_logo">
-        <img src="./image/logo_noText.PNG" width="60%">
+        <img src="./image/logo_noText.PNG" width="40%">
     </div>
     <div class="certification_title">
         <h1>성균관대학교 인증</h1>
     </div>
     <div class="certification_text">
         <p>
-            <strong>스꾸친</strong>은 
-            <br>성균관대학교 학생을 위한
-            <br>메일 인증 기반의 서비스입니다.
+            <strong>스꾸친(SKKU_CHIN)</strong>은 
+            <br><span style="background-color: #ffd0007c; color:black;">성균관대학교 기반 매칭 서비스</span>를 제공합니다.
             <br>
             <br>원할한 서비스 이용을 위해
-            <br>skku.edu 이메일 인증을 진행해주세요.
+            <br>성균관 이메일 인증을 완료해주세요.
         </p>
     </div>
     <div id="certification_email">
         <div id="certification_ID">
             <span class="certification_box">
-                <input type="text" class="certification_int" maxlength="20" placeholder="이메일 주소">
+                <input type="text" class="certification_int" maxlength="20" placeholder="킹고 이메일 주소">
             </span>
         </div>
         <div id="certification_emailtype">
             <span class="certification_box">
                 <select class="certification_sel">
-                    <option>이메일 선택</option>
+                    <option>@ 이메일 선택</option>
                     <option value="01">@ skku.edu</option>
                     <option value="02">@ g.skku.edu</option>
                 </select>
             </span>
         </div>
     </div>
-    <div class="certification_btn">
-        <a href="certification2.html"><button>이메일 인증하기</button></a>
+    <div class="certification_checkBox">
+        <input type="checkbox" id="cert_checkbox" class="input-text">
+        <u><strong>개인정보처리방침</strong></u> 및 <u><strong>이용약관</strong></u>에 동의합니다.
     </div>
+
     <div class="certification_explain">
         <p>
             * 이메일 인증이 어려운 경우, 서비스 이용이 불가합니다.
         </p>
+    </div>
+    <div class="certification_btn">
+        <a href="certification2.html"><button>이메일 인증하기</button></a>
     </div>
 </body>
 </html>

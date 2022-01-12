@@ -20,11 +20,6 @@
                 <img src="image/drawable-xxxhdpi/icon_close.png" style="vertical-align:middle; width: 14px; height: 14px;">
             </div>
         </div>
-        <!-- 게시판 유형 (밥약게시판/커리어게시판) -->
-        <div class="manage_type"> 
-            <li><a href="manage.html"><img src="image/drawable-xxxhdpi/icon_01.png"  style="vertical-align:middle; height: 18px; padding-right: 5%; padding-bottom: 4px;">밥약게시판</a></li>
-            <li><a href="manage_career.html"><img src="image/drawable-xxxhdpi/임시_로고.png" style="vertical-align:middle; height: 17px; padding-right: 5%; padding-bottom: 4px;">커리어게시판</a></li>
-        </div>
         <!-- 게시물 전체 틀-->
         <div class="manage_content">
             <!-- 개별 게시물 -->
@@ -36,9 +31,7 @@
                 </div>
                 <!-- 게시물 대기/마감 여부 -->
                 <div class="manage_content_ritem">
-                    <div class="manage_state_wait">
-                        밥약 대기
-                    </div>
+                    <button class="manage_state_wait" style="width:98px; border: 0;">마감하기</button>
                 </div>
             </div>
             <!-- 개별 게시물 -->
@@ -50,9 +43,9 @@
                 </div>
                 <!-- 게시물 대기/마감 여부 -->
                 <div class="manage_content_ritem">
-                    <div class="manage_state_done">
-                        밥약 마감
-                    </div>
+                    <button disabled class="manage_state_done" style="width:98px; border: 0;">
+                        마감
+                    </button>
                 </div>
             </div>
         </div>

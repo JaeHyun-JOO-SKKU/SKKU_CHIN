@@ -24,6 +24,7 @@
                         <!-- 사이드바 활성화 아이콘 버튼 -->
                         <input type="checkbox" id="checkbox">
                         <label class="btn" for="checkbox"><img src="image/drawable-xxxhdpi/icon_menu_bar.png" style="vertical-align:middle; width:20.16px; height:14px;"></label> 
+                        <div class="background"></div>
                         <!-- sidebar 사이드바 -->
                         <div class="sidebar">
                             <input type="checkbox" id="checkbox">
@@ -31,7 +32,7 @@
                             <!--프로필 (이미지, 이름)-->
                             <div class="home_my_info">
                                 <div class="profile_img">
-                                    <img src="./image/drawable-xxxhdpi/edit_profile.png" alt="프로필_img" style="width:40%; height:40%">
+                                    <img src="image/drawable-xxxhdpi/mbti.png" alt="프로필_img" style="width:40%; height:40%">
                                 <h3>홍길동님</h3>
                                 </div>
                             </div>
@@ -50,6 +51,9 @@
                 </div>
             </div>
         </div>
+        <div class="write_btn">
+            <a href="#"><img src="image/drawable-xxxhdpi/icon_writing.png" style="width: 48px;"></a>
+        </div>
         <!-- searchbar 검색창-->
         <div class="home_searchbar">
             <input type="text" placeholder="글 제목, 내용, 해시태그" style="background-image:url('image/drawable-xxxhdpi/icon_search.png'); background-position: 15px; background-repeat:no-repeat; background-size: 18.96px;"; >
@@ -59,17 +63,18 @@
             <ul>
                 <!-- item 밥약 개별 게시글 -->
                 <div class="home_item">
-                    <!-- item 밥약 개별 게시글 상단 부분 (회색 직선 기준으로 윗부분) home_top_part -->
-                    <div class="home_top_part">
-                        <img src="image/drawable-xxxhdpi/profile01.png" width="37px"; height="37px";>
-                        <div class="home_basic_info">
-                            홍홍길 / 사회학과
-                            <div class="htime">
-                                21분전
+                    <!-- item 밥약 개별 게시글 상단 부분 (회색 직선 기준으로 윗부분) home_top_part width="37px"; height="37px"; padding-bottom= "11.5px";-->
+                    <div id="home_top_part">
+                        <img src="image/drawable-xxxhdpi/profile01.png" style="width: 37px; padding-bottom: 12.5px;";>
+                        <div>
+                            <div id="home_info">
+                                <div id="hname">홍홍길</div>
+                                <div id="hmbti">ENFP</div>
+                                <div id="hnumber">18</div>
                             </div>
+                            <div id="hmajor">글로벌경제학과</div> 
                         </div>
-                        <div class="hmbti"> ENFP </div>
-                        <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                        <div id="htime"> 21분전</div>
                     </div>
                     <!-- item 밥약 개별 게시글 하단 부분 (회색 직선 기준으로 아랫부분) home_bottom_part -->
                     <div class="home_bottom_part">
@@ -86,17 +91,20 @@
             <ul>
                 <!-- item 밥약 개별 게시글 -->
                 <div class="home_item">
-                    <div class="home_top_part">
-                        <img src="image/drawable-xxxhdpi/profile01.png" width="37px"; height="37px";>
-                        <div class="home_basic_info">
-                            홍홍길 / 사회학과
-                            <div h>
-                                21분전
+                    <!-- item 밥약 개별 게시글 상단 부분 (회색 직선 기준으로 윗부분) home_top_part width="37px"; height="37px"; padding-bottom= "11.5px";-->
+                    <div id="home_top_part">
+                        <img src="image/drawable-xxxhdpi/profile01.png" style="width: 37px; padding-bottom: 12.5px;";>
+                        <div>
+                            <div id="home_info">
+                                <div id="hname">홍홍길</div>
+                                <div id="hmbti">ENFP</div>
+                                <div id="hnumber">18</div>
                             </div>
+                            <div id="hmajor">글로벌경제학과</div> 
                         </div>
-                        <div class="hmbti"> ENFP </div>
-                        <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                        <div id="htime"> 21분전</div>
                     </div>
+                     <!-- item 밥약 개별 게시글 하단 부분 (회색 직선 기준으로 아랫부분) home_bottom_part -->
                     <div class="home_bottom_part">
                         같이 밥 드실 분 계실까요? 아무나 환영
                         <div class="home_promise_info">
@@ -111,24 +119,27 @@
             <ul>
                 <!-- item 밥약 개별 게시글 -->
                 <div class="home_item">
-                    <div class="home_top_part">
-                        <img src="image/drawable-xxxhdpi/profile01.png" width="37px"; height="37px";>
-                        <div class="home_basic_info">
-                            홍홍길 / 사회학과
-                            <div h>
-                                21분전
+                    <!-- item 밥약 개별 게시글 상단 부분 (회색 직선 기준으로 윗부분) home_top_part width="37px"; height="37px"; padding-bottom= "11.5px";-->
+                    <div id="home_top_part">
+                        <img src="image/drawable-xxxhdpi/profile01.png" style="width: 37px; padding-bottom: 12.5px;";>
+                        <div>
+                            <div id="home_info">
+                                <div id="hname">홍홍길</div>
+                                <div id="hmbti">ENFP</div>
+                                <div id="hnumber">18</div>
                             </div>
+                            <div id="hmajor">글로벌경제학과</div> 
                         </div>
-                        <div class="hmbti"> ENFP </div>
-                        <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                        <div id="htime"> 21분전</div>
                     </div>
+                     <!-- item 밥약 개별 게시글 하단 부분 (회색 직선 기준으로 아랫부분) home_bottom_part -->
                     <div class="home_bottom_part">
-                        같이 밥 드실 분 계실까요? 아무나 환영 컴오오오오온
+                        같이 밥 드실 분 계실까요? 아무나 환영
                         <div class="home_promise_info">
-                            <div class="promise_type"><img src="image/drawable-xxxhdpi/icon_time01.png" style="width: 12px; height: 12px; vertical-align: middle; padding-right: 4px;">일시</div>
+                            <div><img src="image/drawable-xxxhdpi/icon_time01.png" style="width: 12px; height: 12px; vertical-align: middle; padding-right: 4px;">일시</div>
                             <div id="hdate">오늘 16시 40분</div>
-                            <div class="promise_type"><img src="image/drawable-xxxhdpi/icon_place02.png" style="width: 10px; height: 12px; vertical-align: middle; padding-right: 4px;">장소</div>
-                            <div id="hplace">같이 정해요우ㅜ우우우우우</div>
+                            <div><img src="image/drawable-xxxhdpi/icon_place02.png" style="width: 10px; height: 12px; vertical-align: middle; padding-right: 4px;">장소</div>
+                            <div id="hplace">같이 정해요</div>
                         </div>
                     </div>
                 </div>
@@ -136,17 +147,20 @@
             <ul>
                 <!-- item 밥약 개별 게시글 -->
                 <div class="home_item">
-                    <div class="home_top_part">
-                        <img src="image/drawable-xxxhdpi/profile01.png" width="37px"; height="37px";>
-                        <div class="home_basic_info">
-                            홍홍길 / 사회학과
-                            <div h>
-                                21분전
+                    <!-- item 밥약 개별 게시글 상단 부분 (회색 직선 기준으로 윗부분) home_top_part width="37px"; height="37px"; padding-bottom= "11.5px";-->
+                    <div id="home_top_part">
+                        <img src="image/drawable-xxxhdpi/profile01.png" style="width: 37px; padding-bottom: 12.5px;";>
+                        <div>
+                            <div id="home_info">
+                                <div id="hname">홍홍길</div>
+                                <div id="hmbti">ENFP</div>
+                                <div id="hnumber">18</div>
                             </div>
+                            <div id="hmajor">글로벌경제학과</div> 
                         </div>
-                        <div class="hmbti"> ENFP </div>
-                        <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                        <div id="htime"> 21분전</div>
                     </div>
+                     <!-- item 밥약 개별 게시글 하단 부분 (회색 직선 기준으로 아랫부분) home_bottom_part -->
                     <div class="home_bottom_part">
                         같이 밥 드실 분 계실까요? 아무나 환영
                         <div class="home_promise_info">
@@ -159,8 +173,5 @@
                 </div>
             </ul>
         </div>
-    <!--네브바-->
-    <div class="navbar"></div>
-    </div>
 </body>
 </html>

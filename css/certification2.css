@@ -1,13 +1,51 @@
+/* 기본 틀 : 폰트,여백 설정 */
+@font-face {
+    src: url('font/NanumSquareRoundOTFL.otf') format("truetype");
+    font-family: "NN";
+    font-weight: 100;
+}
+@font-face {
+    src: url('font/NanumSquareRoundOTFR.otf') format("truetype");
+    font-family: "NN";
+    font-weight: 400;
+}
+@font-face {
+    src: url('font/NanumSquareRoundOTFB.otf') format("truetype");
+    font-family: "NN";
+    font-weight: 700;
+}
+@font-face {
+    src: url('font/NanumSquareRoundOTFEB.otf') format("truetype");
+    font-family: "NN";
+    font-weight: 900;
+}
+
 /* 링크 파란색 방지 */
 a{
     color: black;
 }
 
+.c_header {
+    margin: 32px 20px 0px; 
+    display: block;
+    font-weight: 700;
+}
+
+
+.c_header .certification_header {
+    display: flex;
+    justify-content: space-between; 
+    font-size: 18px;
+    box-sizing : border-box;
+}
+
+
+
 
 /* 스꾸친 로고 (no_text) */
 .certification2_logo{
     text-align: center;
-    margin-top: 40%;
+    margin-top: 20%;
 }
 
 /* 제목 */
@@ -50,6 +88,10 @@ a{
 }
 
 .certification2_btn button{
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%, 0);
     font-size: 20px;
     color: white;
     width: 90%;

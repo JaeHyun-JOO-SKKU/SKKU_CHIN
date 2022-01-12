@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>밥약게시판</title>
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square-round.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/notice.css">
 </head>
@@ -18,21 +17,24 @@
                 <img src="image/drawable-xxxhdpi/icon_back_arrow.png" style="margin-top:2.12px; width: 15px; height: 14px; padding-right: 15px;">밥약 게시판
             </div>
             <div class="notice_hright">
-                <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                <img src="image/drawable-xxxhdpi/icon_dotdotdot.png" style="height: 14px;">
             </div>
         </div>
         <!-- 게시글 틀 -->
         <div class="notice_item">
-            <!-- 게시물 상단 부분 (회색 직선 기준으로 윗부분) notice_top_part -->
-            <div class="notice_top_part">
-                <img src="image/drawable-xxxhdpi/profile01.png" style="vertical-align:middle; width:37px; height:37px; padding-right:10px;">
-                <div class="notice_basic_info">
-                    홍홍길 / 사회학과
-                    <div class="time">
-                        21분전
+            <!-- 게시물 상단 부분 (회색 직선 기준으로 윗부분) -->
+            <!-- home 페이지와 공통 -->
+            <div id="home_top_part">
+                <img src="image/drawable-xxxhdpi/profile01.png" style="width: 37px; padding-bottom: 12.5px;";>
+                <div>
+                    <div id="home_info">
+                        <div id="hname">홍홍길</div>
+                        <div id="hmbti">ENFP</div>
+                        <div id="hnumber">18</div>
                     </div>
+                    <div id="hmajor">글로벌경제학과</div> 
                 </div>
-                <div class="mbti" > ENFP </div>
+                <div id="htime"> 21분전</div>
             </div>
             <!-- 게시물 하단 부분 (회색 직선 기준으로 아랫부분) notice_bottom_part -->
             <div class="notice_bottom_part">
@@ -40,6 +42,7 @@
                 <div class="notice_item">
                     <div class="notice_item_title">같이 밥 드실 분 계실까요? 아무나 환영</div>
                     <div class="notice_item_content">학교 근처 오늘 저녁 같이 먹어요~</div>
+                    <div class="notice_mbti_img"><img src="image/drawable-xxxhdpi/mbti.png" style="width: 68px; height: 67px; padding:17px 0;"></div>
                 </div>
                 <!-- 하단 부분 : 일시/장소 포함 밥약 신청박스 -->
                 <div class="notice_promise_info">

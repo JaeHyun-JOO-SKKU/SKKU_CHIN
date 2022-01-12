@@ -9,13 +9,9 @@
 </head>
 <body>
     <div class="content">
-        <div class="notice_header">
-            <div class="notice_hleft">
-                회원가입
-            </div>
-            <div class="notice_hright">
-                <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
-            </div>
+        <div class="register_header">
+            <div class="upload_hleft">회원가입</div>
+            <img src="image/drawable-xxxhdpi/icon_close.png" style="vertical-align:middle; width: 14px; height: 14px;">
         </div>
         <div class="register_title">
             <h2>아이디*</h2>
@@ -26,11 +22,12 @@
                     <input type="text" class="register_int" maxlength="20" placeholder="아이디">
                 </span>
             </div>
-            <div id="register_emailtype">
-                <span id="register_confirm">
-                    <a href=""><button>아이디 중복확인</button></a>
-                </span>
-            </div>
+        </div>
+        <div id="register_emailtype">
+            <span id="register_confirm">
+                <a href=""><button>아이디 중복확인</button></a>
+            </span>
+            <span class="register_notice"> 사용할 수 있는 아이디입니다.</span>
         </div>
         <div class="register_title">
             <h2>비밀번호*</h2>
@@ -40,12 +37,13 @@
                 <div class="register_box">
                     <input type="password" class="register_int" maxlength="20" placeholder="비밀번호">
                 </div>
-                <p>영어 대소문자 + 숫자 + 특수문자 조합</p>
+                <div class="register_passwordCheck">영어 대소문자 + 숫자 + 특수문자 조합</div>
             </div>
             <div id="register_passwordcheck">
                 <div class="register_box">
                     <input type="password" class="register_int" maxlength="20" placeholder="비밀번호 확인">
                 </div>
+                <div class="register_passwordCheck" style="color: rgb(0, 170, 0);">비밀번호가 일치합니다.</div>
             </div>
         </div>
         <div class="register_title">
