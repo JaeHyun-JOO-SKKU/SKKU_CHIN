@@ -1,107 +1,141 @@
-@media only screen and (max-width: 800px){
-    /* 1. 전체 페이지 공통 요소 */
+@font-face{
+    src: url("../font/NanumSquareRoundL.ttf");
+    font-family: "NN";
+}
 
-    /* 2. 전체 공통 요소는 아니지만, 다른 페이지에서도 쓰이는 요소 */
+@font-face{
+    src: url("../font/NanumSquareRoundOTFL.otf") format("truetype");
+    font-family: "NN";
+    font-weight: 100;
+}
 
+@font-face{
+    src: url("../font/NanumSquareRoundOTFR.otf") format("truetype");
+    font-family: "NN";
+    font-weight: 400;
+}
 
-
-    /* 3. 이 페이지에서만 쓰이는 요소 */
-
-
-.chatting {
-    margin: 32px 20px 20px 20px; 
-    font-size: 15px;
-    display: block;
+@font-face{
+    src: url("../font/NanumSquareRoundOTFB.otf") format("truetype");
+    font-family: "NN";
     font-weight: 700;
 }
 
-
-.chatting .chatting_header {
-    display: flex;
-    justify-content: space-between; 
-    font-size: 18px;
-    box-sizing : border-box;
+@font-face{
+    src: url("../font/NanumSquareRoundOTFEB.otf") format("truetype");
+    font-family: "NN";
+    font-weight: 900;
 }
-        /* 채팅 목록 틀 */
-        .chatting_box{
-            width: 100%;
-            position: relative;
-        }
 
-        .chatting_item{
-            display: flex;
-            align-items: center;
-            border-top: 1px solid #eee;
-            padding: 2px 0;
-            font-size: 13px;
-        }
-        .chatting_item:last-child{
-            border-bottom: 1px solid #eee;
-        }
-        /* 알림 미리보기 정보*/
-            /*알림 종류(ex. 시스템 알림 or 채팅 알림 or 이벤트 알림)*/
-
-        .chatting_text{
-            padding-top: 20px;
-        }
-        .chatting_text .chatting_name {
-            margin: 0px 6px 0px 0px;
-            font-size: 15px;
-            font-weight: 400;
-        }
-
-        .chatting_text .chatting_major{
-            color: #8e8e8e;
-            margin-right: 1px;
-            font-size: 11px;
-        }
-
-        .chatting_text .chatting_stNum{
-            color: #8e8e8e;
-            font-size: 11px;
-        }
-
-        .chatting_text p{
-            margin-top: 7px;
-        }
-
-            /*알림 텍스트*/
-        .chatting_item .chatting_text{
-            margin-bottom: 20px;
-            width: 110%;
-        }
-            /*알림 이미지*/
-        .chatting_item .chatting_img{
-            margin: 0;
-            padding-left: 5%;
-            width: 30%;
-        }
-            /*알림 시간 정보 */
-        .chatting_alert{
-            width: 60px;
-        }
-
-        .chatting_item .chatting_alert{
-            padding-right: 20px;
-            font-size: 11px;
-            font-weight: bold;
-            color:#8e8e8e;
-            text-align: right;
-            margin-top: -12px;
-        }
-        .chatting_item .chatting_new{
-            margin-top: 10px;
-            margin-left: 20px;
-            right: 0;
-            text-align: center;
-            line-height: 20px;
-            width: 20px;
-            height: 20px;
-            background-color: #FFCE00;
-            border-radius: 1rem;
-        }
-        
-        .chatting_count{
-            color: #eee;
-        }
+@media only screen and (max-width: 800px){
+    /* 폰트 */
+    *{
+        font-family: "NN";
+        margin: 0;
     }
+
+    /* 링크 파란색 방지 */
+    a{
+        color: black;
+    }
+    
+
+    /* 헤더 */
+    .chatting {
+        margin: 32px 20px 20px 20px; 
+        font-size: 15px;
+        display: block;
+        font-weight: 700;
+    }
+
+    .chatting .chatting_header {
+        display: flex;
+        justify-content: space-between; 
+        font-size: 18px;
+        box-sizing : border-box;
+    }
+
+    /* 채팅 목록 틀 */
+    .chatting_box{
+        width: 100%;
+        position: relative;
+    }
+
+    .chatting_item{
+        display: flex;
+        align-items: center;
+        border-top: 1px solid #eee;
+        padding: 2px 0;
+        font-size: 13px;
+    }
+    .chatting_item:last-child{
+        border-bottom: 1px solid #eee;
+    }
+    /* 알림 미리보기 정보*/
+
+    .chatting_text{
+        padding-top: 20px;
+    }
+    .chatting_text .chatting_name {
+        margin: 0px 6px 0px 0px;
+        font-size: 15px;
+        font-weight: 400;
+    }
+
+    .chatting_text .chatting_major{
+        color: #8e8e8e;
+        margin-right: 1px;
+        font-size: 11px;
+    }
+
+    .chatting_text .chatting_stNum{
+        color: #8e8e8e;
+        font-size: 11px;
+    }
+
+    .chatting_text p{
+        margin-top: 7px;
+    }
+
+    /*알림 텍스트*/
+    .chatting_item .chatting_text{
+        margin-bottom: 20px;
+        width: 110%;
+    }
+
+    /*알림 이미지*/
+    .chatting_item .chatting_img{
+        margin: 0;
+        padding-left: 5%;
+        width: 30%;
+    }
+
+    /* 채팅 목록 우측 알림 */
+    .chatting_alert{
+        width: 60px;
+    }
+
+    .chatting_item .chatting_alert{
+        padding-right: 20px;
+        font-size: 11px;
+        font-weight: bold;
+        color:#8e8e8e;
+        text-align: right;
+        margin-top: -12px;
+    }
+    .chatting_item .chatting_new{
+        margin-top: 10px;
+        margin-left: 20px;
+        right: 0;
+        text-align: center;
+        line-height: 20px;
+        width: 20px;
+        height: 20px;
+        background-color: #FFCE00;
+        border-radius: 1rem;
+    }
+    
+    .chatting_count{
+        color: #eee;
+    }
+}

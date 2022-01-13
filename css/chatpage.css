@@ -3,125 +3,125 @@
     font-family: "NN";
     font-weight: 100;
   }
-  
-  @font-face {
-    src: url("./font/NanumSquareRoundOTFR.otf") format("truetype");
+
+@font-face {
+  src: url("./font/NanumSquareRoundOTFR.otf") format("truetype");
+  font-family: "NN";
+  font-weight: 400;
+}
+
+@font-face {
+  src: url("./font/NanumSquareRoundOTFB.otf") format("truetype");
+  font-family: "NN";
+  font-weight: 700;
+}
+
+@font-face {
+  src: url("./font/NanumSquareRoundOTFEB.otf") format("truetype");
+  font-family: "NN";
+  font-weight: 900;
+}
+
+@media only screen and (max-width: 900px) {
+  /* 1. 전체 페이지 공통 요소 */
+  * {
+    margin: 0;
     font-family: "NN";
-    font-weight: 400;
   }
-  
-  @font-face {
-    src: url("./font/NanumSquareRoundOTFB.otf") format("truetype");
-    font-family: "NN";
+
+  .chatpage_header {
+    margin: 32px 20px 0 20px;
+  }
+
+  /* 링크 색 지우기 */
+  a {
+    color: black;
+  }
+
+  /* 2. 전체 공통 요소는 아니지만, 다른 페이지에서도 쓰이는 요소 */
+
+  /* 3. 이 페이지에서만 쓰이는 요소 */
+
+  .chatpage_header2 {
+    display: grid;
+    grid-template-columns: 1fr 8fr 1fr;
+  }
+
+  .chatpage_name {
+    font-size: 18px;
     font-weight: 700;
   }
-  
-  @font-face {
-    src: url("./font/NanumSquareRoundOTFEB.otf") format("truetype");
-    font-family: "NN";
-    font-weight: 900;
+
+  .chatpage_menu {
+    font-size: 18px;
+    text-align: right;
+    color: #707070;
   }
-  
-  @media only screen and (max-width: 800px) {
-    /* 1. 전체 페이지 공통 요소 */
-    * {
-      margin: 0;
-      font-family: NN;
-    }
-  
-    .chatpage_header {
-      margin: 32px 20px 0 20px;
-    }
-  
-    /* 링크 색 지우기 */
-    a {
-      color: black;
-    }
-  
-    /* 2. 전체 공통 요소는 아니지만, 다른 페이지에서도 쓰이는 요소 */
-  
-    /* 3. 이 페이지에서만 쓰이는 요소 */
-  
-    .chatpage_header2 {
-      display: grid;
-      grid-template-columns: 1fr 8fr 1fr;
-    }
-  
-    .chatpage_name {
-      font-size: 18px;
-      font-weight: 700;
-    }
-  
-    .chatpage_menu {
-      font-size: 18px;
-      text-align: right;
-      color: #707070;
-    }
-  
-    .chatpage_info {
-      font-size: 10px;
-      font-weight: 700;
-      opacity: 0.39;
-      margin: 2%;
-    }
-  
-    /* 게시물 내용 틀 */
-    .chatpage_post {
-      font-weight: 700;
-      font-size: 12px;
-      padding: 20px;
-      border-top: 1px solid #ededed;
-      border-bottom: 1px solid #ededed;
-    }
-  
-    /* 채팅 전 내용 */
-    .chatpage_beforeChat {
-      padding: 20px;
-      display: flex;
-    }
-  
-    .chatpage_beforeLogo {
-      width: 78px;
-      height: 100%;
-      margin-right: 15px;
-    }
-  
-    .chatpage_beforeInfo {
-      line-height: 1.5;
-      padding: 2px;
-      font-size: 13px;
-      opacity: 0.45;
-    }
-  
-    /* 메시지 입력 */
-    .chatpage_footer {
-      position: fixed;
-      bottom: 0;
-      width: 100%;
-    }
-  
-    .chatpage_footer2 {
-      margin: 5px 20px;
-      display: flex;
-    }
-  
-    .chatpage_message {
-      height: 100%;
-      padding: 15px 15px 5px 15px;
-      background-color: #fcf8e7;
-      width: 100%;
-      border-radius: 15px;
-    }
-  
-    .chatpage_messageIn {
-      font-size: 16px;
-      opacity: 0.45;
-      background-color: #fcf8e7;
-      outline: none;
-      border: none;
-    }
-  
-    .chatpage_messageBtn {
-      margin: 5px 0 0 10px;
-    }
+
+  .chatpage_info {
+    font-size: 10px;
+    font-weight: 700;
+    opacity: 0.39;
+    margin: 2%;
   }
+
+  /* 게시물 내용 틀 */
+  .chatpage_post {
+    font-weight: 700;
+    font-size: 12px;
+    padding: 20px;
+    border-top: 1px solid #ededed;
+    border-bottom: 1px solid #ededed;
+  }
+
+  /* 채팅 전 내용 */
+  .chatpage_beforeChat {
+    padding: 20px;
+    display: flex;
+  }
+
+  .chatpage_beforeLogo {
+    width: 78px;
+    height: 100%;
+    margin-right: 15px;
+  }
+
+  .chatpage_beforeInfo {
+    line-height: 1.5;
+    padding: 2px;
+    font-size: 13px;
+    opacity: 0.45;
+  }
+
+  /* 메시지 입력 */
+  .chatpage_footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+
+  .chatpage_footer2 {
+    margin: 5px 20px;
+    display: flex;
+  }
+
+  .chatpage_message {
+    height: 100%;
+    padding: 15px 15px 5px 15px;
+    background-color: #fcf8e7;
+    width: 100%;
+    border-radius: 15px;
+  }
+
+  .chatpage_messageIn {
+    font-size: 16px;
+    opacity: 0.45;
+    background-color: #fcf8e7;
+    outline: none;
+    border: none;
+  }
+
+  .chatpage_messageBtn {
+    margin: 5px 0 0 10px;
+  }
+}

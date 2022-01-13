@@ -3,27 +3,52 @@
     font-family: "NN";
 }
 
-@media only screen and (max-width: 800px){
-    /* 링크 파란색 방지 */
+@font-face{
+    src: url("../font/NanumSquareRoundOTFL.otf") format("truetype");
+    font-family: "NN";
+    font-weight: 100;
+}
 
+@font-face{
+    src: url("../font/NanumSquareRoundOTFR.otf") format("truetype");
+    font-family: "NN";
+    font-weight: 400;
+}
+
+@font-face{
+    src: url("../font/NanumSquareRoundOTFB.otf") format("truetype");
+    font-family: "NN";
+    font-weight: 700;
+}
+
+@font-face{
+    src: url("../font/NanumSquareRoundOTFEB.otf") format("truetype");
+    font-family: "NN";
+    font-weight: 900;
+}
+
+@media only screen and (max-width: 800px){
     *{
         font-family: "NN";
     }
 
+    /* 링크 파란색 방지 */
     a{
         color: black;
     }
 
-    /* 텍스트 입력창 클릭시 테두리 생기는거 방지 */
+    /* input box 클릭시 테두리 방지 */
     input:focus{
         outline: none;
     }
 
+    /* 로그인창 로고 */
     .login_logo{
         text-align: center;
         margin-top: 40%;
     }
 
+    /* 로그인창 인사말 */
     .login_greeting{
         text-align: center;
     }
@@ -33,11 +58,11 @@
         margin-top: 30px;
     }
 
+    /* 로그인 비밀번호 */
     .login_text{
         margin-top: 20px;
         text-align: center;
         margin-bottom: 10px;
-
     }
 
     .login_text input{
@@ -51,6 +76,7 @@
         height: 29px;
     }
 
+    /* 로그인 이메일 */
     #login_email{
         margin-top: 40px;
         display: table;
@@ -58,7 +84,6 @@
         padding-left: 5%;
         align-items: center;
     }
-
 
     #login_ID {
         display: table-cell;
@@ -107,6 +132,7 @@
         cursor: default;
     }
 
+    /* 로그인 버튼 */
     .login_btn{
         text-align: center;
         margin-top: 25px;
@@ -122,6 +148,7 @@
         background-color: #FFCF00;
     }
 
+    /* 로그인창 회원가입, 비밀번호 초기화 버튼 */
     .login_register_btn{
         text-align: center;
         margin-top: 15px;
